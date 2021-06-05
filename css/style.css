@@ -1,0 +1,531 @@
+.body {
+  /* width: 100%; */ /* 2560 */
+  font-family: PTsans, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  background: black;
+}
+
+/* Не изменяемые свойства начало */
+.visually-hiden { /* Доступно прячет элемент в браузере для скринридеров. */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a, button {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.link_background, 
+.button_background {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.link_background:hover, 
+.button_background:hover {
+  background-color: rgb(102, 61, 21);
+}
+/* Не изменяемые свойства конец */
+
+/* Начала блока скрытых областе */
+
+/* Кнопка закрыть в обоих облостях */
+
+.personal-account__btn-close {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-close_margin {
+  position: absolute;
+  right: 1rem;
+}
+
+/* Кнопка закрыть в облости personal-account */
+
+.btn-close_margin_form {
+  top: -2.5rem;
+}
+
+/* Начало блока personal-account */
+
+.personal-account {
+  display: none;
+  width: 70%;
+  padding: 1rem;
+  color: rgb(48, 33, 33);  
+  opacity: 0;
+  background: url(../images/background-white.jpg);
+  position: absolute;
+  top: 25%;
+  left: 11%;
+}
+
+.personal-account__input {
+  border: 3px solid black;
+  display: block;
+  padding: 0.5rem;
+  height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.personal-account__input[placeholder] {
+  padding-left: 1rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.personal-account__input[name="login"] {
+  background: url(../images/user.png) no-repeat 95% 50%;
+}
+
+.personal-account__input[name="password"] {
+  background: url(../images/lock.png) no-repeat 95% 50%;  
+}
+
+.personal-account__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.personal-account__input-checkbox {
+  display: none;
+}
+
+.personal-account__fack {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  background-image: url(../images/background-white.jpg);
+  border: 3px solid black;
+  position: relative;
+}
+
+.personal-account__fack::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 46%;
+  transform: translate(-45%, 1%);
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url(../images/cross.png) no-repeat;
+  opacity: 0;
+  transition: .2s;
+}
+
+.personal-account__span {
+  margin-left: 0.2em;
+}
+
+.personal-account__input-checkbox:checked + .personal-account__fack::before {
+  opacity: 1;
+}
+
+.personal-account__link {
+  color: black;
+  text-decoration: underline;
+}
+
+.personal-account__btn {
+  width: 100%;
+  padding: 1rem 0;
+  font: bold 1rem PTsans, sans-serif;
+}
+/* Конец блока personal-account */
+
+/* Конец блока скрытых областей */
+
+/* Начала блока header */
+  
+.header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.main-menu {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-img {
+  width: 90%;
+}
+
+.main-menu__link-img {
+  margin: 0 auto;
+}
+
+.main-menu__list {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-menu__conner {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  order: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger{
+  border-radius: 5px;/* скругление углов */
+  width: 70px;/* ширина */
+  height: 70px;/* высота */
+  margin: 0 auto;/* отступы от края браузера */
+  display: flex;/* выравнивание на флексбох */
+  align-items: center; /* по вертикали */
+  justify-content: center;/* по горизонтали */
+  flex-direction: column;/* складывание полосок друг под друга */
+  box-shadow: 2px 2px 5px 0 rgba(50,50,50,0.45);/* тень кнопки */
+}
+
+.burger:hover{
+  cursor: pointer;
+}
+
+/* Стилизация полоски */
+.burger__span{
+  /* border: 3px solid blue; */
+  display: block;/* строчный элемент в блочный */
+  transition: all 0.3s;/* плавность анимации */
+  width: 30px;/* ширина полоски */
+  margin: 4px;/* расстояние между полосками */
+  height: 4px;/* высота полоски */
+  background-color: white;/* Цвет полоски */
+  z-index: 11;
+}
+
+/* анимация верхней полоски */
+.first{
+  transform: translate( 5px, -1px) rotate(45deg);
+  transform-origin: left top;
+}
+
+/* анимация средней полоски */
+.middle{
+  transform: scale(0);
+}
+
+/* анимация нижней полоски */
+.last{
+  transform: translate(-4px, -25px) rotate(-45deg);
+  transform-origin: right bottom;
+}
+
+/* Вертикальное меню спрятано */
+.burger-menu{
+  display: flex;/* технология флексбокс */
+  align-items: center; /* выравнивание по центру */
+  justify-content: center; /* выравнивание по центру */
+  background-color: black; /* rgba(255, 255, 255, 0.9) */
+  width: 100vw; /* ширина блока меню */
+  z-index: 10;/* слой ниже кнопки */
+    position: fixed; /* блок зафиксирован */
+  left: -100vw;/* скрывание блока с меню */
+    top: 0; /* позиция от левого верха */
+  transition: all 0.5s;/* плавное выдвижение блока */
+    /* opacity: .95; блок имеет прозрачность */
+}
+
+/* Активный класс меню видимое */
+.burger-menu-active{
+  left: 0; /* блок с меню видимый */
+}
+
+/* burger-menu-active__body {
+  overflow:hidden;
+} */
+
+/* Стилизация списка меню */
+.burger-menu__list {
+  list-style: none; /* убрать маркеры */
+  padding: 0;
+  margin-top: 7rem;
+  height: 100vh; /* блок занимает всю высоту браузера */
+}
+
+/* Стилизация ссылок меню */
+.burger-menu__link{
+  display: block; /* из строчного в блочный */
+  color: white;
+  line-height: 2.5;
+  text-decoration: none;
+  font-family: PTsans, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  width: 100vw; /* блоки с ссылками на всю ширину */
+  display: flex;
+  justify-content: center; /* выравнивание по центру */
+}
+
+/* Эффект наведения мыши на ссылки */
+.burger-menu__link:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vw;
+}
+
+.login-link{
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  display: flex;
+}
+
+.login-link::before {
+  content: "";
+  width: 1.2rem;
+  background: url(../../images/login.svg) no-repeat 0 6px;
+  background-size: 1rem;
+}
+/* Конец блока header */
+
+/* Начало блока footer */
+  
+.footer {
+  background: rgb(35, 35, 35) url(../../images/footer-background.png);
+}
+
+.footer-aside {
+  padding-bottom: 2rem;
+}
+
+.footer-aside__text {
+  text-align: center;
+  line-height: 1.8;
+  display: block;
+  padding-top: 1rem;
+}
+
+.footer-aside__link {
+  text-decoration: underline;
+}
+
+.footer-aside__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-aside__container-network {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-aside__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0;
+}
+ 
+.footer-aside__link-list {
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.footer-aside__brand-name {
+  text-align: center;
+}
+
+.footer-aside__link-brand-name {
+  padding: 0.5rem 0.5rem;
+  background-color: black;
+}
+
+.footer-aside__link-brand-name_margin {
+  display: inline-block;
+  margin-top: 1.1rem;
+}
+/* Конец блока footer */
+
+@media screen and (min-width: 480px) {
+
+  .personal-account__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .personal-account {
+    width: 50%;
+    left: 23%;
+  }
+
+  .main-menu__list {
+    list-style: none;
+    order: -2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: static;
+    border: none;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: initial;
+  }
+
+  .main-menu__wrapper {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-menu__conner {
+    order: -1;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .login-link{
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .link-img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .body {
+    background: black url(../images/background.jpg);
+  }
+
+  .personal-account {
+    width: 30%;
+    top: 18%;
+    left: 33%;
+  }
+
+  .main-menu {
+    flex-direction: row;
+  }
+  
+  .link-img {
+    width: 50%;
+  }
+
+  .main-menu__link-img {
+    position: absolute;
+    top: 150%;
+    left: 25%;
+  }
+
+  .main-menu__list {
+    width: 70%;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    align-items: center;
+    
+  }
+
+  .main-menu__conner {
+    margin-bottom: 0;
+  }
+
+  .login-link {
+    padding: 0;
+  }
+
+  .login-link::before {
+    opacity: 0.6;
+  }
+
+
+  .main-menu__link {
+    padding: 1.7rem 1.2rem;
+  }
+
+  .main-menu__link:hover,
+  .main-menu__link:focus {
+    background-color: rgb(36, 36, 36);
+  }
+
+  .login-link:hover::before,
+  .login-link:focus::before {
+    opacity: 1;
+  }
+
+  .footer-aside {
+    display: flex;
+    padding-top: 2rem;
+
+    /* flex-direction: row; */
+  }
+
+  .footer-aside__text {
+    text-align: left;
+    width: 65%;
+    padding-top: 0;
+  }
+
+  .footer-aside__container {
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .main-menu,
+  .footer-aside {
+    width: 50%;
+    /* margin: 0 auto; */
+  }
+}

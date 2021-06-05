@@ -1,0 +1,397 @@
+@media screen and (min-device-width: 321px) and (max-device-width: 480px) {
+  
+  .body {
+    background: black;
+  }
+
+  .main-menu,
+  .main,
+  .footer-aside {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* Начала блока header */
+
+  .header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .main-menu {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .link-img {
+    width: 45%;
+  }
+
+  .main-menu__link-img {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .main-menu__img {
+    width: 100%;
+  }
+
+  .main-menu__list {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-menu__conner {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger{
+    border-radius: 5px;/* скругление углов */
+    width: 100px;/* ширина */
+    height: 100px;/* высота */
+    margin: 20px auto;/* отступы от края браузера */
+    display: flex;/* выравнивание на флексбох */
+    align-items: center; /* по вертикали */
+    justify-content: center;/* по горизонтали */
+    flex-direction: column;/* складывание полосок друг под друга */
+    box-shadow: 2px 2px 5px 0 rgba(50,50,50,0.45);/* тень кнопки */
+  }
+
+  .burger:hover{
+    cursor: pointer;
+  }
+
+  /* Стилизация полоски */
+  .burger__span{
+    display: block;/* строчный элемент в блочный */
+    transition: all 0.3s;/* плавность анимации */
+    width: 70px;/* ширина полоски */
+    margin: 7px;/* расстояние между полосками */
+    height: 9px;/* высота полоски */
+    background-color: white;/* Цвет полоски */
+    z-index: 11;
+  }
+
+  /* анимация верхней полоски */
+  .first{
+    transform: translate(15px, 3px) rotate(45deg);
+    transform-origin: left top;
+  }
+
+  /* анимация средней полоски */
+  .middle{
+    transform: scale(0);
+  }
+
+  /* анимация нижней полоски */
+  .last{
+    transform: translate(-6px, -45px) rotate(-45deg);
+    transform-origin: right bottom;
+  }
+
+  /* Вертикальное меню спрятано */
+  .burger-menu{
+    display: flex;/* технология флексбокс */
+    align-items: center; /* выравнивание по центру */
+    justify-content: center; /* выравнивание по центру */
+    background-color: black;
+    width: 100vw; /* ширина блока меню */
+    z-index: 10;/* слой ниже кнопки */
+      position: fixed; /* блок зафиксирован */
+    left: -100vw;/* скрывание блока с меню */
+      top: 0; /* позиция от левого верха */
+    transition: all 0.5s;/* плавное выдвижение блока */
+      /*opacity: .95; блок имеет прозрачность */
+  }
+
+  /* Активный класс меню видимое */
+  .burger-menu-active{
+        left: 0; /* блок с меню видимый */
+  }
+
+  /* Стилизация списка меню */
+  .burger-menu__list {
+    list-style: none; /* убрать маркеры */
+    padding: 0;
+    margin-top: 15rem;
+    height: 100vh; /* блок занимает всю высоту браузера */
+  }
+
+  /* Стилизация ссылок меню */
+  .burger-menu__link{
+    display: block; /* из строчного в блочный */
+    color: white;
+    line-height: 2.5;
+    text-decoration: none;
+    font-family: PTsans, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    width: 100vw; /* блоки с ссылками на всю ширину */
+    display: flex;
+    justify-content: center; /* выравнивание по центру */
+  }
+
+  /* Эффект наведения мыши на ссылки */
+  .burger-menu__link:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100vw;
+  }
+
+  .login-link{
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    display: flex;
+  }
+
+  .login-link__img {
+    float: left;
+    width: 2.5rem;
+    margin-right: 0.4rem;
+  }
+  /* Конец блока header */
+
+  .main {
+    color: black;
+    background: url(../../images/background-white.jpg);
+  }
+  
+  /* Начало блока menu */
+  
+  .menu {
+    display: inline-block;
+  }
+  
+  .menu_mixing {
+    margin: 4.5% 0 5% 6%;
+  }
+  
+  .menu__text {
+    font-size: 3.2rem;
+    margin-bottom: 10%;
+  }
+ 
+  .menu__item {
+    display: inline;
+    list-style-type: none;
+    font-size: 2.3rem;
+    color: rgb(192, 189, 187);
+    padding-left: 3rem;
+    background: url(../../images/rhombus-black.png) no-repeat 0 50%;
+    background-size: 2rem;
+  }
+  
+  .menu__item:first-child {
+    color: black;
+    padding-left: 0;
+    margin-right: 0.7rem;
+    background: none;
+  }
+  
+  .menu__link {
+    color: black;
+  }
+  /* Конец блока menu */
+
+  .title {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title_mixing {
+    margin-bottom: 5rem;
+  }
+
+  /* Начало блока assortment */
+
+  .assortment__title_mixing,
+  .assortment__list_mixing,
+  .assortment__text_mixing {
+    margin-left: 5%;
+  }
+
+  .assortment__title {
+    font-size: 2.8rem;
+  }
+
+  .assortment__list {
+    list-style: none;
+    margin-bottom: 5rem;
+  }
+
+  .assortment__item {
+    font-size: 2.3rem;
+    padding-left: 3rem;
+    background: url(../../images/rhombus-black.png) no-repeat 0 50%;
+    background-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .assortment__text {
+    font-size: 2.3rem;
+    line-height: 1.75;
+  }
+
+  /* Конец блока assortment */
+
+  /* Начало блока prices */
+
+  .prices__title,
+  .prices__table,
+  .prices__text {
+    margin-left: 5%;
+  }
+
+  .prices__title {
+    font-size: 2.8rem;
+  }
+
+  .prices__table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 2.3rem;
+    margin: 0 auto;
+  }
+
+  .prices__table-td {
+    border: 2px solid black;
+    width: 20rem;
+    height: 1.75rem;
+  }
+
+  .prices__table-td_text {
+    padding: 1rem 1.2rem;
+  }
+
+  .prices__text {
+    display: inline-block;
+    font-size: 2.3rem;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+  }
+  /* Конец блока prices */
+
+  /* Конец блока main */
+
+  /* Начало блока footer */
+    
+  .footer {
+    display: inline-block;
+    width: 100%;
+    background: rgb(35, 35, 35) url(../../images/footer-background.png);
+  } 
+
+  .footer-aside {
+    font-size: 2rem;
+  }
+
+  .footer__footer-aside {
+    margin-top: 2rem;
+  }
+
+  .footer-aside__text {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 2rem;
+  }
+
+  .footer-aside__text_margin {
+    margin-bottom: 2rem;
+  }
+
+  .footer-aside__link {
+    text-decoration: underline;
+  }
+
+  .footer-aside__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-aside__container,
+  .footer-aside__container-network {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .footer-aside__text-network {
+    font-size: 2rem;
+  }
+
+  .footer-aside__container-network {
+    width: 22rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-aside__list {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .footer-aside__link-list {
+    padding: 1.7rem 2.9rem;
+  }
+
+  .footer-aside__link-vk {
+    background: url(../../images/vk.png) no-repeat 50% 50%,
+              black;
+    background-size: 3rem;
+  }
+
+  .footer-aside__link-f {
+    background: url(../../images/facebook.png) no-repeat 50% 50%,
+              black;
+    background-size: 1.5rem;
+  }
+
+  .footer-aside__link-i {
+    background: url(../../images/instagram.png) no-repeat 50% 50%,
+              black;
+    background-size: 2.5rem;
+  }
+
+  .footer-aside__brand-name {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footer-aside__link-brand-name {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .footer-aside__link-brand-name_margin {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  /* Конец блока footer */
+  
+}

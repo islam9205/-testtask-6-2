@@ -1,0 +1,59 @@
+@media screen and (min-width: 1024px) {
+
+  .main {
+    margin-top: 30%;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+  }
+
+  .advantages__text {
+    width: 90%;
+  }
+
+  .container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .main__news,
+  .main__photo-gallery,
+  .main__contacts,
+  .main__sign-up {
+    width: 40%;
+  }
+
+  .dividing-line {
+    position: static;
+    border: none;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: initial;
+  }
+
+  .news_text,
+  .contacts__container {
+    width: 100%;
+  }
+
+  .photo-gallery__container-photo-btn {
+    width: 100%;
+  }
+
+  .photo-gallery__container-photo-btn {
+    margin: 0 auto;
+  }
+
+  .sign-up__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sign-up__btn {
+    width: 100%;
+  }
+}
