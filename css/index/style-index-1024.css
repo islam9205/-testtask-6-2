@@ -1,6 +1,19 @@
 @media screen and (min-width: 1024px) {
 
-  .main {
+  .map {
+    width: 70%;
+  }
+
+  .map_mixing {
+    top: 150%;
+    left: 15%
+  }
+
+  .main-menu__conner {
+    margin-bottom: 0;
+  }
+
+  .main-index {
     margin-top: 30%;
   }
 
@@ -12,7 +25,7 @@
     width: 90%;
   }
 
-  .container {
+  /* .container {
     display: flex;
     margin-bottom: 2rem;
   }
@@ -22,7 +35,7 @@
   .main__contacts,
   .main__sign-up {
     width: 40%;
-  }
+  } */
 
   .dividing-line {
     position: static;
@@ -39,6 +52,10 @@
     width: 100%;
   }
 
+  .news__link {
+    margin-bottom: 2rem;
+  }
+
   .photo-gallery__container-photo-btn {
     width: 100%;
   }
@@ -48,9 +65,18 @@
   }
 
   .sign-up__form {
+    width: 22.55rem;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  .sign-up__desc_margin:nth-child(odd) {
+    margin-right: 2rem;
+  }
+
+  .sign-up__input {
+    width: 9rem;
+    
   }
 
   .sign-up__btn {
