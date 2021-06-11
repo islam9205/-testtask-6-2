@@ -1,0 +1,12 @@
+@media screen and (min-width: 600px) {
+  
+  .advantages__text {
+    width: 65%;
+  }
+
+  .sign-up__btn {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
