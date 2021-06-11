@@ -42,6 +42,66 @@ ul {
 .button_background:hover {
   background-color: rgb(102, 61, 21);
 }
+
+.container,
+.main {
+  background: url(../images/background-white.jpg);
+  color: black;
+}
+
+.main-menu,
+.main-index,
+.footer-aside {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.list {
+  list-style: none;
+}
+
+.marker__item {
+  padding-left: 2rem;
+  background: url(../../images/rhombus-black.png) no-repeat 0 50%;
+  background-size: 1rem;
+}
+
+.title {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.link-btn_padding {
+  padding: 1rem 2rem;
+}
+
+.link-btn_padding_320 {
+  padding: 1rem 0.7rem;
+}
+
+.bread-crumbs__item {
+  display: inline;
+  color: rgb(192, 189, 187);
+  padding-left: 2rem;
+  background: url(../../images/rhombus-black.png) no-repeat 9% 50%;
+  background-size: 1rem;
+}
+
+.bread-crumbs__item:first-child {
+  padding-left: 0;
+  background: none;
+}
+
+.bread-crumbs__link {
+  color: black;
+}
 /* Не изменяемые свойства конец */
 
 /* Начала блока скрытых областе */
@@ -161,7 +221,6 @@ ul {
 .header {
   width: 100%;
   background-color: black;
-  display: flex;
   margin-bottom: 30px;
 }
 
@@ -193,7 +252,7 @@ ul {
 
 .main-menu__conner {
   margin-top: 1rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   order: -1;
   display: flex;
   justify-content: space-between;
@@ -327,6 +386,7 @@ ul {
   text-align: center;
   line-height: 1.8;
   display: block;
+  margin-top: 0;
   padding-top: 1rem;
 }
 
@@ -340,21 +400,21 @@ ul {
 }
 
 .footer-aside__container-network {
-  width: 8rem;
+  width: 10rem;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer-aside__list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin-top: 0;
 }
  
 .footer-aside__link-list {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,22 +426,26 @@ ul {
 }
 
 .footer-aside__link-brand-name {
-  padding: 0.5rem 0.5rem;
   background-color: black;
-}
-
-.footer-aside__link-brand-name_margin {
   display: inline-block;
-  margin-top: 1.1rem;
+  margin-top: 1rem;
 }
 /* Конец блока footer */
 
 @media screen and (min-width: 480px) {
 
+  .bread-crumbs__item {
+    padding-left: 2.5rem;
+  }
+
   .personal-account__text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .link-btn_padding_320 {
+    padding: 1rem 2rem;
   }
 }
 
@@ -391,16 +455,67 @@ ul {
     width: 50%;
     left: 23%;
   }
+}
 
+@media screen and (min-width: 768px) {
+
+  .link-img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .main__news,
+  .main__photo-gallery,
+  .main__contacts,
+  .main__sign-up,
+  .best-products,
+  .prices,
+  .about-us__text {
+    width: 40% !important;
+  }
+
+  .body {
+    background: black url(../images/background.jpg);
+  }
+
+  .personal-account {
+    width: 30%;
+    top: 18%;
+    left: 33%;
+  }
+
+  .header_margin_none {
+    margin-bottom: 0;
+  }
+
+  .main-menu {
+    flex-direction: row;
+  }
+
+  .link-img {
+    width: 50%;
+  }
+
+  .main-menu__link-img {
+    position: absolute;
+    top: 160%;
+    left: 25%;
+  }
+  
   .main-menu__list {
-    list-style: none;
     order: -2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
     position: static;
     border: none;
     overflow: visible;
@@ -408,6 +523,16 @@ ul {
     height: auto;
     clip: auto;
     padding: initial;
+  }
+
+  .main-menu__span {
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid white;
+  }
+
+  .main-menu__conner {
+    order: -1;
+    margin: 0;
   }
 
   .main-menu__wrapper {
@@ -421,64 +546,6 @@ ul {
     overflow: hidden;
   }
 
-  .main-menu__conner {
-    order: -1;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-  }
-
-  .login-link{
-    font-size: 1.5rem;
-    padding: 1rem 1rem;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-  .link-img {
-    width: 70%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  .body {
-    background: black url(../images/background.jpg);
-  }
-
-  .personal-account {
-    width: 30%;
-    top: 18%;
-    left: 33%;
-  }
-
-  .main-menu {
-    flex-direction: row;
-  }
-  
-  .link-img {
-    width: 50%;
-  }
-
-  .main-menu__link-img {
-    position: absolute;
-    top: 150%;
-    left: 25%;
-  }
-
-  .main-menu__list {
-    width: 70%;
-    margin-top: 1.7rem;
-    margin-bottom: 1.7rem;
-    align-items: center;
-    
-  }
-
-  .main-menu__conner {
-    margin-bottom: 0;
-  }
-
   .login-link {
     padding: 0;
   }
@@ -486,7 +553,6 @@ ul {
   .login-link::before {
     opacity: 0.6;
   }
-
 
   .main-menu__link {
     padding: 1.7rem 1.2rem;
@@ -505,8 +571,6 @@ ul {
   .footer-aside {
     display: flex;
     padding-top: 2rem;
-
-    /* flex-direction: row; */
   }
 
   .footer-aside__text {
@@ -516,16 +580,48 @@ ul {
   }
 
   .footer-aside__container {
+    min-width: 55%;
     margin: 0 auto;
     align-items: center;
+  }
+
+  .footer-aside__link-list:hover,
+  .footer-aside__link-list:focus {
+    background-color: white;
+  }
+
+  .footer-aside__link-list:hover path,
+  .footer-aside__link-list:focus path {
+    fill: black;
+  }
+
+  .footer-aside__link-brand-name:hover,
+  .footer-aside__link-brand-name:focus {
+    background-color: white;
+    color: black;
   }
 }
 
 @media screen and (min-width: 1200px) {
 
+  .personal-account {
+    width: 20rem;
+    top: 20%;
+    left: 40%;
+  }
+
+  .main-menu__link-img {
+    top: 190%;
+  }
+
   .main-menu,
+  .main-index,
+  .main__container,
   .footer-aside {
-    width: 50%;
-    /* margin: 0 auto; */
+    max-width: 1200px;
+  }
+
+  .main__container {
+    margin: 0 auto;
   }
 }
