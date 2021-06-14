@@ -1,5 +1,14 @@
 @media screen and (min-width: 1024px) {
 
+  .body-index {
+    color: white;
+    background: url(../../images/background.jpg);
+  }
+
+  .header {
+    margin-bottom: 20rem;
+  }
+
   .map {
     width: 70%;
   }
@@ -25,18 +34,6 @@
     width: 90%;
   }
 
-  /* .container {
-    display: flex;
-    margin-bottom: 2rem;
-  }
-
-  .main__news,
-  .main__photo-gallery,
-  .main__contacts,
-  .main__sign-up {
-    width: 40%;
-  } */
-
   .dividing-line {
     position: static;
     border: none;
@@ -57,12 +54,8 @@
   }
 
   .photo-gallery__container-photo-btn {
-    width: 100%;
-  }
-
-  .photo-gallery__container-photo-btn {
-    margin: 0 auto;
-  }
+    margin: 0;
+  } 
 
   .sign-up__form {
     width: 22.55rem;
@@ -76,7 +69,6 @@
 
   .sign-up__input {
     width: 9rem;
-    
   }
 
   .sign-up__btn {

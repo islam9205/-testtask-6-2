@@ -5,12 +5,7 @@
   }
 
   .news_text,
-  .photo-gallery__container-photo-btn,
   .contacts__container {
     width: 70%;
-  }
-
-  .photo-gallery__container-photo-btn {
-    margin: 0 auto;
   }
 }

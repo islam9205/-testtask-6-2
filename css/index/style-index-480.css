@@ -3,4 +3,8 @@
   .advantages__text {
     width: 80%;
   }
+
+  .photo-gallery__btn {
+    padding: 1rem 3rem;
+  }
 }

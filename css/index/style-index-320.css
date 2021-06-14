@@ -1,3 +1,8 @@
+.body-index {
+  color: white;
+  background: black;
+}
+
 .dividing-line {
   position: absolute;
   width: 1px;
@@ -7,14 +12,6 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* .container:last-of-type {
-  margin-bottom: 2rem;
-} */
-
-.main-menu__conner {
-  margin-bottom: 5rem;
 }
 
 /* Начала блока скрытой области */
@@ -60,12 +57,11 @@
 
 /* Начало общих стилей для блока main */
 
-.main__news,
-.main__photo-gallery,
-.main__contacts,
-.main__sign-up {
-  width: 90%;
-  margin: 0 auto;
+.container {
+  background: url(../../images/background-white.jpg);
+  color: black;
+  padding: 0 5%;
+  margin-bottom: 2rem;
 }
 
 .photo-gallery__container,
@@ -74,9 +70,6 @@
   justify-content: space-between;
 }
 
-.btn {
-  font: bold 1rem PTsans, sans-serif;
-}
 /* Конец общих стилей для блока main */
 
 /* Начало блока Преимущества */
@@ -131,11 +124,15 @@
 
 .news__link {
   display: inline-block;
-  margin-bottom: 1.5rem;
 }
 /* Конец блока Новости */
 
 /* Начало блока Фотогалерея */
+
+.photo-gallery__container-photo-btn {
+  max-width: 20rem;
+  margin: 0 auto;
+}
 
 .photo-gallery__box {
   background-color: rgb(229, 229, 229);
@@ -152,10 +149,6 @@
 .photo-gallery__img[alt] {
   color: black;
   font-size: 2rem;
-}
-
-.photo-gallery__btn {
-  margin-bottom: 2rem;
 }
 /* Конец блока Фотогалерея */
 
@@ -189,9 +182,6 @@
   font-size: 1rem;
 }
 
-.sign-up__btn {
-  margin-bottom: 2rem;
-}
 /* Конец блока Записаться */
 
 /* Конец блока main */
