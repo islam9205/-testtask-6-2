@@ -9,14 +9,14 @@
 	</head>
 	<body class="body">
 
-		<header class="header header_margin_none">
+		<header class="header">
 			<nav class="main-menu">
 
-				<a class="link-img main-menu__link-img" href="index.html">
+				<a class="link-img" href="index.html">
 					<img src="images/logo.svg" alt="Логотип бардершоп «Бородинский»">
 				</a>
 				
-				<ul class="list main-menu__list">
+				<ul class="list main-menu__list main-menu__list-no-index">
 					<li><a class="main-menu__link" href="news.html">Новости</a></li>
 					<li><a class="main-menu__link" href="price.html"><span class="main-menu__span">Прайс-лист</span></a></li>
 					<li><a class="main-menu__link" href="shop.html">Магазин</a></li>
@@ -48,67 +48,65 @@
 		</header>
 
 		<main class="main">
-			<div class="main__container">
 
-				<div class="bread-crumbs-menu">
-					<p class="title">Прайс-лист</p>
+			<div class="bread-crumbs-menu">
+				<p class="title">Прайс-лист</p>
+				<ul class="list bread-crumbs-menu__list">
+					<li class="text bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
+					<li class="text bread-crumbs__item">Прайс-лист</li>
+				</ul>
+			</div>
+			
+			<h1 class="main__title">Истинно мужская класcика</h1>
+			
+			<div class="container">
+				<div class="best-products">
+					<h2 class="title">Мы используем только лучшие средства:</h2>
 					<ul class="list">
-						<li class="text bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
-						<li class="text bread-crumbs__item">Прайс-лист</li>
+						<li class="text marker__item">Baxter of California</li>
+						<li class="text marker__item">Mr Natty</li>
+						<li class="text marker__item">Suavecito</li>
+						<li class="text marker__item">Malin+Goetz</li>
 					</ul>
 				</div>
-				
-				<h1 class="main__title">Истинно мужская класcика</h1>
-				
-				<div class="container container__price">
-					<div class="best-products">
-						<h2 class="title">Мы используем только лучшие средства:</h2>
-						<ul class="list">
-							<li class="text marker__item">Baxter of California</li>
-							<li class="text marker__item">Mr Natty</li>
-							<li class="text marker__item">Suavecito</li>
-							<li class="text marker__item">Malin+Goetz</li>
-						</ul>
-					</div>
 
-					<div class="prices">
-						<h2 class="title">Цены на услуги<br> наших мастеров:</h2>
-						<table class="prices__table">
-							<tr>
-								<td class="text prices__table-td prices__table-td_text">СТРИЖКА</td>
-								<td class="text prices__table-td" align="center">1500 ₽</td>
-							</tr>
-							<tr>
-								<td class="text prices__table-td prices__table-td_text">СТРИЖКА БОРОДЫ</td>
-								<td class="text prices__table-td" align="center">500 ₽</td>
-							</tr>
-							<tr>
-								<td class="text prices__table-td prices__table-td_text">НАКРУТКА УСОВ</td>
-								<td class="text prices__table-td" align="center">350 ₽</td>
-							</tr>
-						</table>
-					</div>
+				<div class="prices">
+					<h2 class="title">Цены на услуги<br> наших мастеров:</h2>
+					<table class="prices__table">
+						<tr>
+							<td class="text prices__table-td prices__table-td_text">СТРИЖКА</td>
+							<td class="text prices__table-td" align="center">1500 ₽</td>
+						</tr>
+						<tr>
+							<td class="text prices__table-td prices__table-td_text">СТРИЖКА БОРОДЫ</td>
+							<td class="text prices__table-td" align="center">500 ₽</td>
+						</tr>
+						<tr>
+							<td class="text prices__table-td prices__table-td_text">НАКРУТКА УСОВ</td>
+							<td class="text prices__table-td" align="center">350 ₽</td>
+						</tr>
+					</table>
 				</div>
-
-				<div class="about-us">
-					<h2 class="title">Несколько слов о нас:</h2>
-					<div class="container container__price">
-						<p class="text about-us__text">
-							Наша парикмахерская занимается исключительно мужскими
-							стрижками. Стрижка каждого клиента для нас - это уникальная
-							и продуманная до мелочей работа. Мы не работаем на
-							количество, мы делаем качество.
-						</p>
-						<p class="text about-us__text">
-							Наша мастерская расположена в центре города, поэтому
-							сделать стильную стрижку можно в любое время, даже в
-							обеденный перерыв. Здесь вы можете погрузиться в удобную
-							для вас атмосферу, чувствовать себя комфортно и свободно!
-						</p>
-					</div>
-				</div>
-			
 			</div>
+
+			<div class="about-us">
+				<h2 class="title">Несколько слов о нас:</h2>
+				<div class="container">
+					<p class="text about-us__text">
+						Наша парикмахерская занимается исключительно мужскими
+						стрижками. Стрижка каждого клиента для нас - это уникальная
+						и продуманная до мелочей работа. Мы не работаем на
+						количество, мы делаем качество.
+					</p>
+					<p class="text about-us__text">
+						Наша мастерская расположена в центре города, поэтому
+						сделать стильную стрижку можно в любое время, даже в
+						обеденный перерыв. Здесь вы можете погрузиться в удобную
+						для вас атмосферу, чувствовать себя комфортно и свободно!
+					</p>
+				</div>
+			</div>
+			
 		</main>
 
 		<footer class="footer">
