@@ -1,22 +1,9 @@
 @media screen and (min-width: 1024px) {
 
-  .container__price {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    
-  }
-
-  .container__price:last-of-type {
-    width: 100%;
-    margin: 0;
-  }
-
-  .best-products,
+  /* .best-products,
   .prices {
     margin: 0;
-  }
+  } */
 
   .main__title {
     display: flex;
@@ -41,5 +28,4 @@
   .main__title::after {
     margin-left: 25px;
   }
-  
 }
