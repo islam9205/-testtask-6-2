@@ -3,9 +3,9 @@
   font-family: PTsans, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  color: white;
+  color: black;
   text-transform: uppercase;
-  background: black;
+  background: url(../images/background-white.jpg);
 }
 
 /* Не изменяемые свойства начало */
@@ -31,6 +31,10 @@ ul {
   padding-left: 0;
 }
 
+.btn {
+  font: bold 1rem PTsans, sans-serif;
+}
+
 .link_background, 
 .button_background {
   background-color: black;
@@ -43,14 +47,8 @@ ul {
   background-color: rgb(102, 61, 21);
 }
 
-.container,
-.main {
-  background: url(../images/background-white.jpg);
-  color: black;
-}
-
 .main-menu,
-.main-index,
+.main,
 .footer-aside {
   width: 90%;
   margin: 0 auto;
@@ -80,6 +78,7 @@ ul {
 
 .link-btn_padding {
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .link-btn_padding_320 {
@@ -89,14 +88,18 @@ ul {
 .bread-crumbs__item {
   display: inline;
   color: rgb(192, 189, 187);
-  padding-left: 2rem;
-  background: url(../../images/rhombus-black.png) no-repeat 9% 50%;
+  padding-left: 2.2rem;
+  background: url(../../images/rhombus-black.png) no-repeat 8% 50%;
   background-size: 1rem;
 }
 
 .bread-crumbs__item:first-child {
   padding-left: 0;
   background: none;
+}
+
+.bread-crumbs__item:last-child {
+  padding-left: 2.7rem;
 }
 
 .bread-crumbs__link {
@@ -219,9 +222,7 @@ ul {
 /* Начала блока header */
   
 .header {
-  width: 100%;
   background-color: black;
-  margin-bottom: 30px;
 }
 
 .main-menu {
@@ -231,8 +232,19 @@ ul {
   justify-content: space-between;
 }
 
-.link-img {
+.link-img-index {
   width: 90%;
+}
+
+.link-img {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-menu__link-img {
@@ -252,7 +264,7 @@ ul {
 
 .main-menu__conner {
   margin-top: 1rem;
-  /* margin-bottom: 5rem; */
+  margin-bottom: 3rem;
   order: -1;
   display: flex;
   justify-content: space-between;
@@ -375,6 +387,7 @@ ul {
 /* Начало блока footer */
   
 .footer {
+  color: white;
   background: rgb(35, 35, 35) url(../../images/footer-background.png);
 }
 
@@ -459,7 +472,7 @@ ul {
 
 @media screen and (min-width: 768px) {
 
-  .link-img {
+  .link-img-index {
     width: 70%;
   }
 }
@@ -469,6 +482,13 @@ ul {
   .container {
     display: flex;
     margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+
+  .main-menu,
+  .main,
+  .footer-aside {
+    max-width: 1024px;
   }
 
   .main__news,
@@ -481,26 +501,33 @@ ul {
     width: 40% !important;
   }
 
-  .body {
-    background: black url(../images/background.jpg);
-  }
-
   .personal-account {
     width: 30%;
     top: 18%;
     left: 33%;
   }
 
-  .header_margin_none {
-    margin-bottom: 0;
-  }
-
   .main-menu {
     flex-direction: row;
+    position: relative;
+  }
+
+  .link-img-index {
+    width: 50%;
   }
 
   .link-img {
-    width: 50%;
+    position: static;
+    border: none;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: initial;
+    order: -2;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
   }
 
   .main-menu__link-img {
@@ -523,6 +550,15 @@ ul {
     height: auto;
     clip: auto;
     padding: initial;
+  }
+
+  .main-menu__list-no-index {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .bread-crumbs-menu__list {
+    margin-bottom: 5rem;
   }
 
   .main-menu__span {
@@ -615,13 +651,8 @@ ul {
   }
 
   .main-menu,
-  .main-index,
-  .main__container,
+  .main,
   .footer-aside {
     max-width: 1200px;
-  }
-
-  .main__container {
-    margin: 0 auto;
   }
 }
