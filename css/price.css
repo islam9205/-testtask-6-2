@@ -1,0 +1,59 @@
+/* @import url(./price/style-price-320.css);
+@import url(./price/style-price-480.css);
+@import url(./price/style-price-600.css);
+@import url(./price/style-price-768.css);
+@import url(./price/style-price-1024.css);
+@import url(./price/style-price-1200.css); */
+
+.bread-crumbs-menu,
+.main__title {
+  margin-bottom: 2rem;
+}
+
+.main__title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.prices__table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.prices__table-td {
+  border: 2px solid black;
+  width: 20rem;
+  height: 1.75rem;
+}
+
+.prices__table-td_text {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .main__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .main__title::before,
+  .main__title::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50px;
+    height: 2px;
+    background: black;
+  }
+
+  .main__title::before {
+    margin-right: 25px;
+  }
+
+  .main__title::after {
+    margin-left: 25px;
+  }
+}
