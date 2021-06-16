@@ -61,7 +61,7 @@ ul {
 
 .marker__item {
   padding-left: 2rem;
-  background: url(../../images/rhombus-black.png) no-repeat 0 50%;
+  background: url(../images/rhombus-black.png) no-repeat 0 50%;
   background-size: 1rem;
 }
 
@@ -89,7 +89,7 @@ ul {
   display: inline;
   color: rgb(192, 189, 187);
   padding-left: 2.2rem;
-  background: url(../../images/rhombus-black.png) no-repeat 8% 50%;
+  background: url(../images/rhombus-black.png) no-repeat 8% 50%;
   background-size: 1rem;
 }
 
@@ -396,7 +396,7 @@ ul {
 .login-link::before {
   content: "";
   width: 1.2rem;
-  background: url(../../images/login.svg) no-repeat 0 6px;
+  background: url(../images/login.svg) no-repeat 0 6px;
   background-size: 1rem;
 }
 /* Конец блока header */
@@ -405,7 +405,7 @@ ul {
   
 .footer {
   color: white;
-  background: rgb(35, 35, 35) url(../../images/footer-background.png);
+  background: rgb(35, 35, 35) url(../images/footer-background.png);
 }
 
 .footer-aside {
