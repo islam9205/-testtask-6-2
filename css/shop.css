@@ -59,7 +59,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  top: 7px;
+  top: 5px;
   background-image: url(../images/background-white.jpg);
   border: 2px solid black;	
   position: relative;
@@ -221,6 +221,10 @@
 
   .sidebar__title {
     margin-top: 0;
+  }
+
+  .sidebar__span_mixing {
+    margin-left: 2.1rem;
   }
 
   .products {
