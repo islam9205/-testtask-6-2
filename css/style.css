@@ -88,18 +88,15 @@ ul {
 .bread-crumbs__item {
   display: inline;
   color: rgb(192, 189, 187);
-  padding-left: 2.2rem;
-  background: url(../images/rhombus-black.png) no-repeat 8% 50%;
+  margin-right: 0.6rem;
+  padding-left: 1.9rem;
+  background: url(../images/rhombus-black.png) no-repeat 0 50%;
   background-size: 1rem;
 }
 
 .bread-crumbs__item:first-child {
   padding-left: 0;
   background: none;
-}
-
-.bread-crumbs__item:last-child {
-  padding-left: 2.7rem;
 }
 
 .bread-crumbs__link {
@@ -353,9 +350,10 @@ ul {
   left: 0; /* блок с меню видимый */
 }
 
-/* burger-menu-active__body {
+/* Этот класс добовляю когда захожу в бургер меню */
+.burger-menu-active__body {
   overflow:hidden;
-} */
+}
 
 /* Стилизация списка меню */
 .burger-menu__list {
@@ -463,10 +461,6 @@ ul {
 /* Конец блока footer */
 
 @media screen and (min-width: 480px) {
-
-  .bread-crumbs__item {
-    padding-left: 2.5rem;
-  }
 
   .personal-account__text {
     display: flex;
