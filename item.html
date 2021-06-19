@@ -142,9 +142,29 @@
 			</div>
 		</footer>
 
+		<section class="personal-account">
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<form action="#" method="post">
+				<input class="personal-account__input" id="user-login" type="email" name="login" placeholder="Логин">
+				<input class="personal-account__input" id="user-password" type="password" name="password" placeholder="Пароль">
+				<p class="personal-account__text">
+					<label for="remember-me">
+						<input class="personal-account__input-checkbox" checked id="remember-me" type="checkbox" name="remember-me" value="yes">
+						<span class="personal-account__fack"></span>
+						<span class="personal-account__span">Запомните меня</span>
+					</label>
+					<a class="personal-account__link" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="personal-account__btn button_background" type="submit">Войти</button>
+			</form>
+			<input class="personal-account__btn-close btn-close_margin btn-close_margin_form" type="image" src="./images/cross-close.png" alt="Кнопка закрыть">
+		</section>
+
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/script-button.js"></script>
 		<script src="js/script-menu.js"></script>
+		<script src="js/login-link.js"></script>
 	</body>
 </html>
