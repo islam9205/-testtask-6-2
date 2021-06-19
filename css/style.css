@@ -147,12 +147,15 @@ ul {
   display: none;
   width: 70%;
   padding: 1rem;
-  color: rgb(48, 33, 33);  
-  opacity: 0;
+  color: rgb(48, 33, 33);
   background: url(../images/background-white.jpg);
   position: absolute;
   top: 25%;
   left: 11%;
+}
+
+.show-block {
+  display: block;
 }
 
 .personal-account__input {
