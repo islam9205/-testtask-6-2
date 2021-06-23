@@ -145,29 +145,35 @@ ul {
 
 .personal-account {
   display: none;
-  width: 70%;
-  padding: 1rem;
+  width: 14rem;
+  padding: 2rem;
   color: rgb(48, 33, 33);
   background: url(../images/background-white.jpg);
   position: absolute;
   top: 25%;
-  left: 11%;
+  left: 5%;
 }
 
 .show-block {
   display: block;
 }
 
+.personal-account__title {
+  margin-top: 0;
+}
+
 .personal-account__input {
   border: 3px solid black;
   display: block;
   padding: 0.5rem;
-  height: 1rem;
+  width: 12rem;
+  height: 2rem;
   margin-bottom: 1rem;
 }
 
 .personal-account__input[placeholder] {
   padding-left: 1rem;
+  font: bold 1.3rem PTsans, sans-serif;
   color: black;
   text-transform: uppercase;
 }
@@ -232,6 +238,16 @@ ul {
   padding: 1rem 0;
   font: bold 1rem PTsans, sans-serif;
 }
+
+.personal-account__span_background {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 /* Конец блока personal-account */
 
 /* Конец блока скрытых областей */
@@ -293,6 +309,7 @@ ul {
   width: 70px;/* ширина */
   height: 70px;/* высота */
   margin: 0 auto;/* отступы от края браузера */
+  margin-left: -20px;
   display: flex;/* выравнивание на флексбох */
   align-items: center; /* по вертикали */
   justify-content: center;/* по горизонтали */
@@ -392,6 +409,7 @@ ul {
   font-size: 1.5rem;
   padding: 1rem 1rem;
   display: flex;
+  margin-right: -10px;
 }
 
 .login-link::before {
@@ -465,6 +483,16 @@ ul {
 
 @media screen and (min-width: 480px) {
 
+  .personal-account {
+    width: 20rem;
+    padding: 4rem;
+    left: 3.5%;
+  }
+
+  .personal-account__input {
+    width: 18rem;
+  }
+
   .personal-account__text {
     display: flex;
     flex-direction: row;
@@ -479,12 +507,15 @@ ul {
 @media screen and (min-width: 600px) {
 
   .personal-account {
-    width: 50%;
-    left: 23%;
+    left: 12%;
   }
 }
 
 @media screen and (min-width: 768px) {
+
+  .personal-account {
+    left: 20%;
+  }
 
   .link-img-index {
     width: 70%;
@@ -516,9 +547,8 @@ ul {
   }
 
   .personal-account {
-    width: 30%;
-    top: 18%;
-    left: 33%;
+    top: 20%;
+    left: 27%;
   }
 
   .main-menu {
@@ -527,7 +557,7 @@ ul {
   }
 
   .link-img-index {
-    width: 50%;
+    width: 40%;
   }
 
   .link-img {
@@ -547,7 +577,7 @@ ul {
   .main-menu__link-img {
     position: absolute;
     top: 160%;
-    left: 25%;
+    left: 30%;
   }
   
   .main-menu__list {
@@ -655,9 +685,7 @@ ul {
 @media screen and (min-width: 1200px) {
 
   .personal-account {
-    width: 20rem;
-    top: 20%;
-    left: 40%;
+    left: 38%;
   }
 
   .main-menu__link-img {
