@@ -152,6 +152,8 @@ ul {
   position: absolute;
   top: 25%;
   left: 5%;
+  z-index: 10;
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
 }
 
 .show-block {
@@ -237,15 +239,6 @@ ul {
   width: 100%;
   padding: 1rem 0;
   font: bold 1rem PTsans, sans-serif;
-}
-
-.personal-account__span_background {
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 /* Конец блока personal-account */
@@ -547,7 +540,7 @@ ul {
   }
 
   .personal-account {
-    top: 20%;
+    top: 18%;
     left: 27%;
   }
 
@@ -576,7 +569,7 @@ ul {
 
   .main-menu__link-img {
     position: absolute;
-    top: 160%;
+    top: 230%;
     left: 30%;
   }
   
@@ -685,11 +678,12 @@ ul {
 @media screen and (min-width: 1200px) {
 
   .personal-account {
+    top: 16%;
     left: 38%;
   }
 
   .main-menu__link-img {
-    top: 190%;
+    top: 200%;
   }
 
   .main-menu,
