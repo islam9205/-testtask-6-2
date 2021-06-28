@@ -18,10 +18,8 @@
 				
 				<ul class="list main-menu__list">
 					<li><a class="main-menu__link" href="index.html">Информация</a></li>
-					<li><a class="main-menu__link" href="news.html">Новости</a></li>
 					<li><a class="main-menu__link" href="price.html">Прайс-лист</a></li>
 					<li><a class="main-menu__link" href="shop.html">Магазин</a></li>
-					<li><a class="main-menu__link" href="contacts.html">Контакты</a></li>
 				</ul>
 
 				<div class="main-menu__conner">
@@ -34,10 +32,8 @@
 						<div class="burger-menu">
 							<ul class="burger-menu__list">
 								<li><a class="burger-menu__link" href="index.html">Информация</a></li>
-								<li><a class="burger-menu__link" href="news.html">Новости</a></li>
 								<li><a class="burger-menu__link" href="price.html">Прайс-лист</a></li>
 								<li><a class="burger-menu__link" href="shop.html">Магазин</a></li>
-								<li><a class="burger-menu__link" href="contacts.html">Контакты</a></li>
 							</ul>
 						</div>
 					</div>	
@@ -135,7 +131,7 @@
 						сб-вс: с 10:00 до 19:00
 					</p>
 					<div class="contacts__container">
-						<a class="link-btn_padding link-btn_padding_320 link_background" href="map.html">Как проехать</a>
+						<a class="link-btn_padding link-btn_padding_320 link_background contacts__link" href="map.html">Как проехать</a>
 						<a class="link-btn_padding link-btn_padding_320 link_background" href="contacts.html">Обратная связь</a>
 					</div>
 				</section>
@@ -228,10 +224,10 @@
 			<input class="personal-account__btn-close btn-close_margin btn-close_margin_form" type="image" src="./images/cross-close.png" alt="Кнопка закрыть">
 		</section>
 
-		<section class="map map_mixing">
+		<section class="map">
 			<h2 class="visually-hiden">Как до нас добраться</h2>
-			<img class="map__img" src="images/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" srcset="">
-			<input class="personal-account__btn-close btn-close_margin btn-close_margin_map" type="image" src="./images/cross-close.png" alt="Кнопка закрыть">
+			<div style="position:relative;overflow:hidden;border: 0.5rem solid white;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324730%2C59.938620&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUemZsksC" width="800" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+			<input class="map__btn-close btn-close_margin btn-close_margin_map" type="image" src="./images/cross-close.png" alt="Кнопка закрыть">
 		</section>
 
 
@@ -239,5 +235,6 @@
 		<script src="js/script-button.js"></script>
 		<script src="js/script-menu.js"></script>
 		<script src="js/login-link.js"></script>
+		<script src="js/map.js"></script>
 	</body>
 </html>
