@@ -30,24 +30,15 @@
 
 .map {
   display: none;
-  opacity: 0;
-  width: 91%;
-}
-
-.map_mixing {
+  width: 17rem;
   position: absolute;
-  top: 380%;
-  left: 2%
+  top: 400%;
+  left: 50%;
+  margin-left: -8.5rem;
 }
 
-.map__img {
-  width: 100%;
-  border: 0.5rem solid white;
-}
-
-.map__img[alt] {
-  background: white;
-  color: black;
+.show-block {
+  display: block;
 }
 /* Конец блока map */
 
@@ -188,6 +179,12 @@
 
 @media screen and (min-width: 480px) {
 
+  .map {
+    width: 25rem;
+    top: 380%;
+    margin-left: -12.5rem;
+  }
+
   .advantages__text {
     width: 80%;
   }
@@ -198,7 +195,12 @@
 }
 
 @media screen and (min-width: 600px) {
-  
+
+  .map {
+    width: 31rem;
+    margin-left: -15.5rem;
+  }
+
   .advantages__text {
     width: 65%;
   }
@@ -227,17 +229,14 @@
     background: url(../images/background.jpg);
   }
 
+  .map {
+    width: 40rem;
+    top: 140%;
+    margin-left: -20rem;
+  }
+
   .header {
     margin-bottom: 20rem;
-  }
-
-  .map {
-    width: 70%;
-  }
-
-  .map_mixing {
-    top: 150%;
-    left: 15%
   }
 
   .main-menu__conner {
@@ -301,11 +300,7 @@
 @media screen and (min-width: 1200px) {
 
   .map {
-    width: 45%;
-  }
-
-  .map_mixing {
-    left: 25%
+    top: 130%;
   }
 
   .main-index {

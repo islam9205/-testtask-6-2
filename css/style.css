@@ -125,11 +125,6 @@ ul {
 
 /* Кнопка закрыть в обоих облостях */
 
-.personal-account__btn-close {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .btn-close_margin {
   position: absolute;
   right: 1rem;
@@ -151,7 +146,8 @@ ul {
   background: url(../images/background-white.jpg);
   position: absolute;
   top: 25%;
-  left: 5%;
+  left: 50%;
+  margin-left: -9rem;
   z-index: 10;
   box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
 }
@@ -479,7 +475,7 @@ ul {
   .personal-account {
     width: 20rem;
     padding: 4rem;
-    left: 3.5%;
+    margin-left: -14rem;
   }
 
   .personal-account__input {
@@ -497,18 +493,8 @@ ul {
   }
 }
 
-@media screen and (min-width: 600px) {
-
-  .personal-account {
-    left: 12%;
-  }
-}
 
 @media screen and (min-width: 768px) {
-
-  .personal-account {
-    left: 20%;
-  }
 
   .link-img-index {
     width: 70%;
@@ -541,7 +527,6 @@ ul {
 
   .personal-account {
     top: 18%;
-    left: 27%;
   }
 
   .main-menu {
@@ -679,7 +664,6 @@ ul {
 
   .personal-account {
     top: 16%;
-    left: 38%;
   }
 
   .main-menu__link-img {
