@@ -34,7 +34,6 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-
   
   if (!login.value || !password.value) {
     evt.preventDefault();
