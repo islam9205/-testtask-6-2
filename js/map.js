@@ -13,3 +13,13 @@ mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("show-block");
 });
+
+window.addEventListener("keydown", function (evt) {
+
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("show-block")) {
+      evt.preventDefault();
+      popup.classList.remove("show-block");
+    }
+  }
+});
