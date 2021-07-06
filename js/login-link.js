@@ -18,7 +18,6 @@ link.addEventListener("click", function (evt) {
 
   evt.preventDefault();
   popup.classList.add("show-block");
-  login.focus();
   if (storage) {
     login.value = storage;
     password.focus();
@@ -31,13 +30,16 @@ close.addEventListener("click", function (evt) {
 
   evt.preventDefault();
   popup.classList.remove("show-block");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
   
   if (!login.value || !password.value) {
     evt.preventDefault();
-    console.log("Нужно ввести логин и пароль");
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
